@@ -21,3 +21,12 @@
 #### The login system work based on the database we have in our system. We keep record of each users' ID, type, name, phone, email, password, and role. For instance, (1000, 'Student', 'Fina', 'Langhorne', '6 Di Loreto Street', '(582)223-0871', 'flanghorne0@salon.com', '2vklvjlk3', 'user').
 #### In order to keep our data secure from possible cyber attacks, we used hash function and added salting to the password to make it impossible to decipher, using the following code:
 $token=has('ripemd128', $salt1.$defaultpass.$salt2);
+
+# Users VS. Admins
+### Users can:
+#### Log in and see the parking map.
+#### Choose a parking lot to see the corresponding permit type.
+#### Buy a parking permit and view violation.
+### Admins can:
+#### Update, add, and delete a map of parking.
+#### Manage parking permits and violations.
